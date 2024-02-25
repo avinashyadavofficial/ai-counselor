@@ -6,11 +6,11 @@ palm.configure(api_key='AIzaSyBZZBj_c1TDDWAYgDg8GUqGiJYX4uzSjxY')
 models = [m for m in palm.list_models() if 'generateText' in m.supported_generation_methods]
 model = models[0].name
 
-st.title("Student Career Counselor Chatbot")
+st.title("Chatbot by AVINASH YADAV")
 
 # Initial chatbot response
 response = palm.chat(context="Act like a Student Career Counsellor.", messages='Hello')
-st.write("Hello, I'm your Student Career Counselor, how can I help you?")
+st.write("Hello I am Avinash Yadav, how can I help you?")
 
 user_message = st.text_input("Enter your message:")
 
